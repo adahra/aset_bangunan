@@ -14,7 +14,7 @@
                             </h1>
                         </div>
                         <group>
-                            <field name="name" string="Nama" groups="base.group_no_one"/>
+                            <field name="name" string="Nama"/>
                             <field name="kode" string="Kode"/>
                         </group>
                     </sheet>
