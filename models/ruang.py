@@ -1,11 +1,10 @@
-from odoo import fields, models
+from odoo import fields
+from . import lantai
 
 
-class BangunanRuang(models.Model):
+class BangunanRuang(lantai.BangunanLantai):
     _name = 'bangunan.ruang'
     _description = 'Bangunan Ruang Model'
 
-    name = fields.Char(string='Bangunan Ruang Nama', required=True)
-    kode = fields.Char(string='Bangunan Ruang Kode')
-    bangunan_id = fields.Many2one('bangunan.bangunan', string='Bangunan ID')
+    # bangunan_id = fields.Many2one('bangunan.bangunan', string='Bangunan ID')
     lantai_id = fields.Many2one('bangunan.lantai', string='Bangunan Lantai ID')
