@@ -1,6 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_bangunan_area,access_bangunan_area,model_bangunan_area,base.group_user,1,0,0,0
-access_bangunan_zona,access_bangunan_zona,model_bangunan_zona,base.group_user,1,0,0,0
-access_bangunan_bangunan,access_bangunan_bangunan,model_bangunan_bangunan,base.group_user,1,0,0,0
-access_bangunan_lantai,access_bangunan_lantai,model_bangunan_lantai,base.group_user,1,0,0,0
-access_bangunan_ruang,access_bangunan_ruang,model_bangunan_ruang,base.group_user,1,0,0,0
+access_bangunan_area,access_bangunan_area,model_bangunan_area,base.group_user,1,1,1,0
+access_bangunan_zona,access_bangunan_zona,model_bangunan_zona,base.group_user,1,1,1,0
+access_bangunan_bangunan,access_bangunan_bangunan,model_bangunan_bangunan,base.group_user,1,1,1,0
+access_bangunan_lantai,access_bangunan_lantai,model_bangunan_lantai,base.group_user,1,1,1,0
+access_bangunan_ruang,access_bangunan_ruang,model_bangunan_ruang,base.group_user,1,1,1,0
