@@ -1,2 +1,3 @@
-constrollers/__pycache__
-models/__pycache__
+**/constrollers/__pycache__
+**/models/__pycache__
+**__pycache__
