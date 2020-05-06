@@ -1,2 +1,2 @@
 # Aset Bangunan
-Latihan [odoo framework](https://github.com/adahra/aset_bangunan.git), membuat custom modul
+Latihan [odoo framework](https://github.com/odoo/odoo), membuat custom modul
