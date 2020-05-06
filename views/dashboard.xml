@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="bangunan_bangunan_form_view" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_bangunan.form</field>
+            <field name="model">bangunan.bangunan</field>
+            <field name="arch" type="xml">
+                <form string="Bangunan">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <p>Bangunan</p>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="area_id" string="Area"
+                                       options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"/>
+                                <field name="zona_id" string="Zona" domain="[('area_id','=',area_id)]"
+                                       options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"/>
+                                <field name="jenis_bangunan" string="Jenis Bangunan"
+                                       options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"/>
+                                <field name="nomor_imb" string="Nomor IMB"/>
+                                <field name="alamat" string="Alamat"/>
+                            </group>
+                            <group>
+                                <field name="kode" string="Kode"/>
+                                <field name="name" string="Bangunan"/>
+                                <field name="sertifikat" string="Sertifikat"/>
+                                <field name="nomor_sertifikat" string="Nomor Sertifikat"/>
+                                <field name="keterangan" string="Keterangan"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="bangunan_bangunan_tree_view" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_bangunan.tree</field>
+            <field name="model">bangunan.bangunan</field>
+            <field name="arch" type="xml">
+                <tree string="Bangunan">
+                    <field name="area_id" string="Area"/>
+                    <field name="zona_id" string="Zona"/>
+                    <field name="kode" string="Kode"/>
+                    <field name="name" string="Bangunan"/>
+                    <field name="alamat" string="Alamat"/>
+                    <field name="nomor_imb" string="No. IMB"/>
+                    <field name="sertifikat" string="Sertifikat"/>
+                    <field name="keterangan" string="Keterangan"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="bangunan_kanban" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_bangunan.kanban</field>
+            <field name="model">bangunan.bangunan</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="area_id" string="Area"/>
+                    <field name="zona_id" string="Zona"/>
+                    <field name="kode" string="Kode"/>
+                    <field name="name" string="Bangunan"/>
+                    <field name="alamat" string="Alamat"/>
+                    <field name="nomor_imb" string="No. IMB"/>
+                    <field name="sertifikat" string="Sertifikat"/>
+                    <field name="keterangan" string="Keterangan"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="bangunan_bangunan_act_window" model="ir.actions.act_window">
+            <field name="name">Bangunan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bangunan.bangunan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your First Area !
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="bangunan_root" name="Aset Bangunan" sequence="1"/>
+
+        <menuitem
+                name="Bangunan"
+                parent="bangunan_root"
+                action="bangunan_bangunan_act_window"
+                sequence="1"
+                id="menu_dashboard"/>
+    </data>
+</odoo>

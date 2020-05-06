@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="bangunan_zona_form_view" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_zona.form</field>
+            <field name="model">bangunan.zona</field>
+            <field name="arch" type="xml">
+                <form string="Zona">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <p>Zona</p>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name" string="Nama"/>
+                                <field name="kode" string="Kode"/>
+                                <field name="area_id"
+                                       options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"
+                                       string="Area"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="bangunan_zona_kanban" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_zona.kanban</field>
+            <field name="model">bangunan.zona</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="name"/>
+                    <field name="kode"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click o_bangunan_zona_kanban">
+                                <div class="oe_kanban_details">
+                                    <strong class="o_kanban_record_title">
+                                        <b>
+                                            <field name="name"/>
+                                        </b>
+                                    </strong>
+                                    <div class="o_kanban_tags_section"/>
+                                    <ul>
+                                        <li>Nama :
+                                            <field name="name"/>
+                                        </li>
+                                        <li>Kode :
+                                            <field name="kode"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="bangunan_zona_view_tree" model="ir.ui.view">
+            <field name="name">aset_bangunan.bangunan_zona_view_tree</field>
+            <field name="model">bangunan.zona</field>
+            <field name="arch" type="xml">
+                <tree string="bangunan_zona_tree">
+                    <field name="id" string="ID"/>
+                    <field name="name" string="Nama"/>
+                    <field name="kode" string="Kode"/>
+                    <field name="area_id" string="Area"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="bangunan_zona_act_window" model="ir.actions.act_window">
+            <field name="name">Zona</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bangunan.zona</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="context">{"search_default":1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your First Zona !
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Zona" id="bangunan_zona_menu" parent="bangunan_root" action="bangunan_zona_act_window"
+                  sequence="13"/>
+
+    </data>
+</odoo>
