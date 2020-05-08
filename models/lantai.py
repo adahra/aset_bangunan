@@ -1,8 +1,8 @@
 from odoo import fields, api, _
-from . import bangunan
+from . import area
 
 
-class BangunanLantai(bangunan.BangunanBangunan):
+class BangunanLantai(area.BangunanArea):
     _name = 'bangunan.lantai'
     _description = 'Bangunan Lantai Model'
 
