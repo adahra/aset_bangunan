@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="lantai_def" model="bangunan.lantai">
+            <field name="name">Lantai 1</field>
+            <field name="kode">L001</field>
+            <field name="bangunan_id">1</field>
+        </record>
+    </data>
+</odoo>

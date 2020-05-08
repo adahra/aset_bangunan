@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bangunan_def" model="bangunan.bangunan">
+            <field name="name">Kantor Pusat</field>
+            <field name="kode">B001</field>
+            <field name="area_id">1</field>
+            <field name="zona_id">1</field>
+            <field name="jenis_bangunan">kantor</field>
+            <field name="nomor_imb">xxx000xxx</field>
+            <field name="alamat">Jalan Delima No. 3</field>
+            <field name="sertifikat">shm</field>
+            <field name="nomor_sertifikat">xxx000xxx</field>
+        </record>
+    </data>
+</odoo>

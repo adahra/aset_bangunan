@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="zona_def" model="bangunan.zona">
+            <field name="name">Utara</field>
+            <field name="kode">Z001</field>
+            <field name="area_id">1</field>
+        </record>
+    </data>
+</odoo>
