@@ -8,6 +8,12 @@
             <field name="arch" type="xml">
                 <form string="Lantai">
                     <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="open_bangunan_ruang" class="oe_stat_button" type="object"
+                                    icon="fa-archive">
+                                <field string="Ruang" name="ruang_count" widget="statinfo"/>
+                            </button>
+                        </div>
                         <div class="oe_title">
                             <h1>
                                 <p>Lantai</p>
