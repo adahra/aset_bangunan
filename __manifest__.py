@@ -24,6 +24,11 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'data/area_data_default.xml',
+        'data/zona_data_default.xml',
+        'data/bangunan_data_default.xml',
+        'data/lantai_data_default.xml',
+        'data/ruang_data_default.xml',
         'views/dashboard.xml',
         'views/area.xml',
         'views/zona.xml',
