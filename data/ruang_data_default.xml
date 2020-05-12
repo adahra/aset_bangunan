@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+        <record id="ruang_seq" model="ir.sequence">
+            <field name="name">Sequence Ruang</field>
+            <field name="code">bangunan.ruang.sequence</field>
+            <field name="prefix">R</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
         <record id="ruang_direktur_def" model="bangunan.ruang">
             <field name="name">Ruang Direktur</field>
-            <field name="kode">R001</field>
             <field name="bangunan_id">1</field>
             <field name="lantai_id">1</field>
         </record>
 
         <record id="ruang_hrd_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi HRD</field>
-            <field name="kode">R002</field>
             <field name="bangunan_id">1</field>
             <field name="lantai_id">1</field>
         </record>
 
         <record id="ruang_accounting_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi Finance &amp; Accounting</field>
-            <field name="kode">R003</field>
             <field name="bangunan_id">1</field>
             <field name="lantai_id">1</field>
         </record>
 
         <record id="ruang_it_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi IT</field>
-            <field name="kode">R004</field>
             <field name="bangunan_id">1</field>
             <field name="lantai_id">1</field>
         </record>
