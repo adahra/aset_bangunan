@@ -11,26 +11,26 @@
 
         <record id="ruang_direktur_def" model="bangunan.ruang">
             <field name="name">Ruang Direktur</field>
-            <field name="bangunan_id">1</field>
-            <field name="lantai_id">1</field>
+            <field name="bangunan_id" ref="bangunan_def"/>
+            <field name="lantai_id" ref="lantai_def"/>
         </record>
 
         <record id="ruang_hrd_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi HRD</field>
-            <field name="bangunan_id">1</field>
-            <field name="lantai_id">1</field>
+            <field name="bangunan_id" ref="bangunan_def"/>
+            <field name="lantai_id" ref="lantai_def"/>
         </record>
 
         <record id="ruang_accounting_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi Finance &amp; Accounting</field>
-            <field name="bangunan_id">1</field>
-            <field name="lantai_id">1</field>
+            <field name="bangunan_id" ref="bangunan_def"/>
+            <field name="lantai_id" ref="lantai_def"/>
         </record>
 
         <record id="ruang_it_def" model="bangunan.ruang">
             <field name="name">Ruang Divisi IT</field>
-            <field name="bangunan_id">1</field>
-            <field name="lantai_id">1</field>
+            <field name="bangunan_id" ref="bangunan_def"/>
+            <field name="lantai_id" ref="lantai_def"/>
         </record>
     </data>
 </odoo>

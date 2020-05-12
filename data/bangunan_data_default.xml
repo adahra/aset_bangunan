@@ -11,8 +11,8 @@
 
         <record id="bangunan_def" model="bangunan.bangunan">
             <field name="name">Kantor Pusat</field>
-            <field name="area_id">1</field>
-            <field name="zona_id">1</field>
+            <field name="area_id" ref="area_def"/>
+            <field name="zona_id" ref="zona_def"/>
             <field name="jenis_bangunan">kantor</field>
             <field name="nomor_imb">xxx000xxx</field>
             <field name="alamat">Jalan Delima No. 3</field>

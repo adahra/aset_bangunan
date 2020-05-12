@@ -11,7 +11,7 @@
 
         <record id="lantai_def" model="bangunan.lantai">
             <field name="name">Lantai 1</field>
-            <field name="bangunan_id">1</field>
+            <field name="bangunan_id" ref="bangunan_def"/>
         </record>
     </data>
 </odoo>

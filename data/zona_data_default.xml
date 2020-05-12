@@ -11,7 +11,7 @@
 
         <record id="zona_def" model="bangunan.zona">
             <field name="name">Utara</field>
-            <field name="area_id">1</field>
+            <field name="area_id" ref="area_def"/>
         </record>
     </data>
 </odoo>
