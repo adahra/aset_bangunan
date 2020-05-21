@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <record id="action_bangunan_ruang" model="ir.actions.act_window">
+            <field name="name">Ruang</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bangunan.ruang</field>
+            <field name="domain">[('bangunan_id', '=', active_id)]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="aset_bangunan.bangunan_ruang_view_tree"/>
+            <field name="binding_model_id" ref="model_bangunan_lantai"/>
+        </record>
 
         <record id="bangunan_lantai_form_view" model="ir.ui.view">
             <field name="name">aset_bangunan.bangunan_lantai.form</field>

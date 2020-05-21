@@ -8,10 +8,14 @@ class AsetBangunan(http.Controller):
     def index(self, **kw):
         return "Hello, world"
 
+    @http.route('/api/', auth='public')
+    def api(self, **kw):
+        return "Ini API"
+
     @http.route('/bangunan/objects/', auth='public')
     def list(self, **kw):
         return http.request.render('bangunan.listing', {
-            'root': '/bangunan',
+            'root': '/',
             'objects': http.request.env['bangunan.bangunan'].search([]),
         })
 
