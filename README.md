@@ -1,2 +1,0 @@
-# aset_bangunan
-
