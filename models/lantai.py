@@ -22,5 +22,12 @@ class BangunanLantai(area.BangunanArea):
         count = self.env['bangunan.ruang'].search_count([])
         self.ruang_count = count
 
-    bangunan_id = fields.Many2one('bangunan.bangunan', string='Bangunan ID')
-    ruang_count = fields.Integer(string='Ruang', compute='get_ruang_count')
+    bangunan_id = fields.Many2one(
+        comodel_name='bangunan.bangunan',
+        string='Bangunan ID'
+    )
+
+    ruang_count = fields.Integer(
+        string='Ruang',
+        compute='get_ruang_count'
+    )
